@@ -2,7 +2,7 @@
  #include <ctype.h>
  #include <stdio.h>
 /**
- * _islower - check the code.
+ * _isalpha - check the code.
  * @c: un entero de la funcion
  * Return: Always 0.
  */
