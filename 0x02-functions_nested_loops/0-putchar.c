@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -8,7 +8,13 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	int i;
+	char c [] = "_putchar";
 
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(c[i]);
+	}
+	_putchar('\n');ifndef
 	return (0);
 }
