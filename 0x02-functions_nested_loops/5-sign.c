@@ -2,10 +2,10 @@
 #include <ctype.h>
 #include <stdio.h>
 /**
- * print_sing - check the code.
- * @n: un entero de la funcion
- * Return: Always 0.
- */
+* print_sign - check the code.
+* @n: un entero de la funcion
+* Return: Always 0.
+*/
 
 int print_sign(int n)
 {
