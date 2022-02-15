@@ -1,13 +1,15 @@
 #include "main.h"
+#include <ctype.h>
+#include <stdio.h>
 /**
- * _islower - check the code.
- *
- * Return: Always 0.
- */
+* _islower - check the code.
+* @c: un entero de la funcion
+* Return: Always 0.
+*/
 
 int _islower(int c)
 {
-	if (_islower(c))
+	if (islower(c))
 	{
 		return (1);
 	}
