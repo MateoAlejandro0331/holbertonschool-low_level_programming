@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 /**
 * main - causes an infinite loop
 * i: int inside the funtion
 * "\\o/\n" is description of no bucle
 * Return: 0
 */
-
 int main(void)
 {
 int i;
@@ -24,4 +22,3 @@ printf("Infinite loop avoided! \\o/\n");
 
 return (0);
 }
-
