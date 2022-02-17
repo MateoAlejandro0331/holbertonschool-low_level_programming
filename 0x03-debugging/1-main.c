@@ -2,17 +2,19 @@
 
 /**
 * main - causes an infinite loop
+* i: int inside the funtion
+* "\\o/\n" is description of no bucle
 * Return: 0
 */
 
 int main(void)
 {
-/*int i;*/
+int i;
 
 printf("Infinite loop incoming :(\n");
+
+i = 0;
 /**
-*i = 0;
-*
 *while (i < 10)
 *{
 *putchar(i);
@@ -22,3 +24,4 @@ printf("Infinite loop avoided! \\o/\n");
 
 return (0);
 }
+
