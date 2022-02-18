@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_diagonal - check the code
+ * @n: int inside the funtion
  * Return: Always 0.
  */
 
@@ -11,11 +11,12 @@ void print_diagonal(int n)
 	int i;
 	int j;
 
-	if ( n <= 0)
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-	else {
+	else
+	{
 
 		for (j = 1; j <= n; j++)
 		{
