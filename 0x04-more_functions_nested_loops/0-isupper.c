@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Ret
+ * _isupper - check the code.
+ *@c: char inside the funtion
+ * Return: depends of the int inside the funtion
  */
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
-		return(1);
+		return (1);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
