@@ -8,22 +8,15 @@
 
 void more_numbers(void)
 {
-	int num;
+	char numeros[] = {0,1,2,3,4,5,6,7,8,9,1,0,1,1,1,2,1,3,1,4};
+	int columnas;
 	int filas;
 
-	for (filas = 0; filas < 10; filas++)
+	for (columnas = 0; columnas < 10; columnas++)
 	{
-		for (num = 0; num <= 14; num++)
+		for (filas = 0; filas <= 19; filas++)
 		{
-			if (num <= 9)
-			{
-				_putchar(num +48);
-			}
-			else
-			{
-				_putchar((num/10) + 48);
-				_putchar((num%10) + 48);
-			}
+			_putchar(numeros[filas] + 48);
 		}
 		_putchar('\n');
 	}
