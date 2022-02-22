@@ -21,5 +21,5 @@
 			printf("%d", a[i]);
 		}
 	}
-	printf(" \n");
+	printf("\n");
 }
