@@ -16,6 +16,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	else if ((argc - 1) == 3)
+	{
+		return (0);
+	}
 	else
 	{
 		for (i = 1; i < argc; i++)
