@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
+ * str_concat - check the code
+ * @s1: frist string to concat
+ * @s2: second string to concat
  * Return: Always 0.
  */
 char *str_concat(char *s1, char *s2)
@@ -21,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		for (i = 0; s1[i]; i++)
 			;
 		i++;
-		for (j = 0; s1[j]; j++)
+		for (j = 0; s2[j]; j++)
 			;
 		j++;
 
