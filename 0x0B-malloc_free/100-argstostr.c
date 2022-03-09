@@ -1,5 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * argstostr - Prints an array of string
+ * @ac: the number of the arguments
+ * @av: the value if the arguments
+ * Return: nothing
+ */
 
 char *argstostr(int ac, char **av)
 {
