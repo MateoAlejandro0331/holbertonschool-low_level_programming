@@ -41,13 +41,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concat = malloc(sizeof(char) * (size1 + size2 + 1));
 		if (concat == NULL)
+		{
+			free(concat);
 			return (NULL);
+		}
 	}
 	else
 	{
 		concat = malloc(sizeof(char) * (size1 + n + 1));
 		if (concat == NULL)
+		{
+			free(concat);
 			return (NULL);
+		}
 	}
 	for (i = 0; i < size1; i++)
 	{
