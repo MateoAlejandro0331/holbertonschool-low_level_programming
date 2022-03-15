@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_dog - check the code
+ *@d: pointer to the struct
+ * Return: Nothing
  */
 
 void print_dog(struct dog *d)
