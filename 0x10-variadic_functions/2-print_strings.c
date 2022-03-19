@@ -1,5 +1,10 @@
 #include "variadic_functions.h"
-
+/**
+ *  print_strings - check the code
+ * @separator: char to separate the ints
+ * @n: total arguments of the funtion
+ * Return: Nothing
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
@@ -21,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 			printf("%s%s", valor, separator);
 		}
-		else 
+		else
 		{
 			valor = "(nil)";
 			if (i == (n - 1))
