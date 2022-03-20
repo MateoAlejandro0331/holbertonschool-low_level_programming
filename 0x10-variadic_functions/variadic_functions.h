@@ -15,8 +15,8 @@ void print_all(const char *const format, ...);
  */
 typedef struct op
 {
-    char *op;
-    void (*func)();
+	char *op;
+	void (*func)();
 } op_t;
 
 void func_char(va_list ap);
