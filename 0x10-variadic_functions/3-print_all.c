@@ -6,7 +6,7 @@
  */
 void func_char(va_list ap)
 {
-    printf("%c", va_arg(ap, int));
+	printf("%c", va_arg(ap, int));
 }
 
 /**
@@ -15,7 +15,7 @@ void func_char(va_list ap)
  */
 void func_int(va_list ap)
 {
-    printf("%d", va_arg(ap, int));
+	printf("%d", va_arg(ap, int));
 }
 
 /**
@@ -24,7 +24,7 @@ void func_int(va_list ap)
  */
 void func_float(va_list ap)
 {
-    printf("%f", va_arg(ap, double));
+	printf("%f", va_arg(ap, double));
 }
 
 /**
@@ -33,12 +33,12 @@ void func_float(va_list ap)
  */
 void funcp_char(va_list ap)
 {
-    char *resul;
+	char *resul;
 
-    resul = va_arg(ap, char *);
-    if (resul == NULL)
-        resul = "(nil)";
-    printf("%s", resul);
+	resul = va_arg(ap, char *);
+	if (resul == NULL)
+		resul = "(nil)";
+	printf("%s", resul);
 }
 
 /**
@@ -47,34 +47,34 @@ void funcp_char(va_list ap)
  */
 void print_all(const char *const format, ...)
 {
-    va_list ap;
-    unsigned int i, j;
-    char *separator = "";
-    op_t ops[] = {
-        {"c", func_char},
-        {"i", func_int},
-        {"f", func_float},
-        {"s", funcp_char},
-        {NULL, NULL}};
+	va_list ap;
+	unsigned int i, j;
+	char *separator = "";
+	op_t ops[] = {
+		{"c", func_char},
+		{"i", func_int},
+		{"f", func_float},
+		{"s", funcp_char},
+		{NULL, NULL}};
 
-    va_start(ap, format);
-    i = 0;
-    while (format && format[i])
-    {
-        j = 0;
-        while (ops[j].op != NULL)
-        {
-            if (*(ops[j].op) == format[i])
-            {
-                printf("%s", separator);
-                ops[j].func(ap);
-                separator = ", ";
-                break;
-            }
-            j++;
-        }
-        i++;
-    }
-    printf("\n");
-    va_end(ap);
+	va_start(ap, format);
+	i = 0;
+	while (format && format[i])
+	{
+		j = 0;
+		while (ops[j].op != NULL)
+		{
+			if (*(ops[j].op) == format[i])
+			{
+				printf("%s", separator);
+				ops[j].func(ap);
+				separator = ", ";
+				break;
+			}
+			j++;
+		}
+		i++;
+	}
+	printf("\n");
+	va_end(ap);
 }
