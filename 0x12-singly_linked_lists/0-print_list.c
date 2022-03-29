@@ -12,26 +12,12 @@ size_t print_list(const list_t *h)
 	current = malloc(sizeof(list_t));
 	current = h;
 
-	while (current->next != NULL)
+	while (current)
 	{
-		if (current->str == NULL)
-		{
-			printf("[0] (nil)\n");
-			printf("[%d] %s\n", current->next->len, current->next->str);
-			count++;
-		}
-		else if (current->next->str == NULL)
-		{
+		if (current->str)
 			printf("[%d] %s\n", current->len, current->str);
-			printf("[0] (nil)\n");
-			count++;
-		}
 		else
-		{
-			printf("[%d] %s\n", current->len, current->str);
-			printf("[%d] %s\n", current->next->len, current->next->str);
-			count++;
-		}
+			printf("[0] (nil)\n");
 		current = current->next;
 		count++;
 	}
