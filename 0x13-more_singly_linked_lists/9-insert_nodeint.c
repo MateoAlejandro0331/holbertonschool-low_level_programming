@@ -1,5 +1,11 @@
 #include "lists.h"
-
+/**
+ *  insert_nodeint_at_index - get a node from the list
+ * @head: pointer to the beginig of the list
+ * @idx: index to the node to find
+ * @n: value to asingned
+ * Return: node
+ */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node;
