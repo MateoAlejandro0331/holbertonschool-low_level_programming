@@ -1,27 +1,19 @@
 #include "main.h"
 /**
- * flip - flip bits
- * @b: number
- * Return: count if bits.
- */
-int flip(int b)
-{
-	int count = 0;
-
-	while (b > 0)
-	{
-		b = b & (b - 1);
-		count++;
-	}
-	return (count);
-}
-/**
- * flip_bits - flip bits using XOR
+ * flip_bits - clear a number bit
  * @n: number
  * @m: number
- * Return: to funtion flip.
+ * Return: count if bits.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	return (flip(n ^ m));
+	unsigned int a_xor_m = n ^ m;
+	unsigned int count = 0;
+
+	while (a_xor_m > 0)
+	{
+		a_xor_m = a_xor_m & (a_xor_m - 1);
+		count++;
+	}
+	return (count);
 }
