@@ -7,8 +7,8 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int a_xor_m = n ^ m;
-	unsigned int count = 0;
+	int a_xor_m = n ^ m;
+	int count = 0;
 
 	while (a_xor_m > 0)
 	{
