@@ -13,7 +13,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 	num = num << index;
 	if (index <= bits)
 	{
-
 		*n = (num | *n);
 	}
 	else
