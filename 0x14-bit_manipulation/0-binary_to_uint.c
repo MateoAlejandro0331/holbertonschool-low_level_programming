@@ -6,7 +6,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int pot[] = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
+	unsigned int pot[] = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048};
 	unsigned int i, len, num = 0;
 
 	for (len = 0; b[len]; len++)
