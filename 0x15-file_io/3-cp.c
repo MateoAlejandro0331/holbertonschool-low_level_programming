@@ -30,9 +30,9 @@ int main(int ac, char **av)
 	}
 	cl1 = close(fd1);
 	if (cl1 < 0)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", cl1), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1), exit(100);
 	cl2 = close(fd2);
 	if (cl2 < 0)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", cl2), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2), exit(100);
 	return (0);
 }
