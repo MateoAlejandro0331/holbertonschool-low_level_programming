@@ -1,6 +1,6 @@
 #!/bin/bash
-touch libdynamic.so
-chmod 0775 libdynamic.so
+touch liball.so
+chmod 0775 liball.so
 gcc -Wall -fPIC -c *.c
-gcc -shared -o libdynamic.so *.o
-nm -D libdynamic.so
+gcc -shared -o liball.so *.o
+nm -D liball.so
