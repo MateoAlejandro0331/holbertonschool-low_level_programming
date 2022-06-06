@@ -13,6 +13,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *node = NULL;
 
+	if (!ht)
+		return (0);
 	if (!key)
 		return (0);
 	if (!value)
