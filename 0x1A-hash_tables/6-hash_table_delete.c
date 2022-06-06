@@ -11,8 +11,8 @@ void free_recursion(hash_node_t *aux)
 	if (aux == NULL)
 		return;
 	free_recursion(aux->next);
-	free(aux->value);
 	free(aux->key);
+	free(aux->value);
 	free(aux);
 }
 /**
