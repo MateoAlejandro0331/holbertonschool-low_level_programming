@@ -32,6 +32,7 @@ void hash_table_delete(hash_table_t *ht)
 		aux = ht->array[i];
 		free_recursion(aux);
 	}
+	free(aux);
 	free(ht->array);
 	free(ht);
 }
