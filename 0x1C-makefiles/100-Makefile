@@ -6,14 +6,16 @@ remove = rm
 RM = $(remove)
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+.PHONY: all clean oclean fclean
+
 all: $(OBJ)
-	$(CC) -Wall -Werror -Wextra -pedantic $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean: 
-	$(RM) -f *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
